@@ -1,29 +1,3 @@
-<template>
-  <nav class="navbar">
-    <div class="nav-content">
-      <a href="#" class="logo">
-        <img src="@/assets/logo.gif" alt="Logo Text" class="logo-text" />
-      </a>
-
-      <ul class="nav-links" :class="{ 'is-active': isMobileMenuOpen }">
-        <li v-for="link in navLinks" :key="link.text">
-          <a :href="link.url" @click="isMobileMenuOpen = false">{{ link.text }}</a>
-        </li>
-      </ul>
-
-      <div class="nav-actions">
-        <a href="#contato" class="btn-cta">CONTATO</a>
-        
-        <div class="mobile-toggle" @click="toggleMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-  </nav>
-</template>
-
 <script setup>
 import { ref } from 'vue';
 
@@ -32,132 +6,51 @@ const isMobileMenuOpen = ref(false);
 const navLinks = [
   { text: 'SOBRE', url: '#sobre' },
   { text: 'PROJETOS', url: '#projetos' },
-  { text: 'HABILIDADES', url: '#habilidades' }
+  { text: 'HABILIDADES', url: '#habilidades' },
+  { text: 'CERTIFICAÇÕES', url: '#certificados' }
 ];
 
 const toggleMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
 };
 </script>
+<template>
+  <nav class="fixed top-0 left-0 w-full flex justify-center p-5 z-[1000]">
+    <div class="w-full max-w-[1200px] flex items-center justify-between px-6 py-3 
+                bg-black/60 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl">
+      
+      <a href="#" class="flex items-center">
+        <img src="@/assets/logo.gif" alt="Logo" class="w-[110px] h-10 object-contain rounded-lg" />
+      </a>
 
-<style scoped>
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  z-index: 1000;
-}
+      <ul :class="[
+        'flex gap-8 list-none transition-all duration-300',
+        isMobileMenuOpen 
+          ? 'absolute top-24 left-5 right-5 flex-col bg-black/95 p-5 rounded-2xl border border-white/10 flex' 
+          : 'hidden md:flex'
+      ]">
+        <li v-for="link in navLinks" :key="link.text">
+          <a :href="link.url" 
+             @click="isMobileMenuOpen = false"
+             class="text-[0.85rem] tracking-widest font-bold text-[#c1c1c9] hover:text-white transition-colors duration-200">
+            {{ link.text }}
+          </a>
+        </li>
+      </ul>
 
-.nav-content {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 24px;
-  background: rgba(10, 10, 10, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 100px;
-}
-
-.logo-text {
-  width: 110px;
-  height: 40px;
-  border-radius: 8px;
-  position: relative;
-}
-
-.nav-links {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #c1c1c9;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.nav-links a:hover {
-  color: #fff;
-}
-
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.btn-login {
-  text-decoration: none;
-  color: #a1a1aa;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.btn-cta {
-  background: #fff;
-  color: #050505;
-  padding: 10px 20px;
-  border-radius: 100px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: transform 0.2s ease;
-}
-
-.btn-cta:hover {
-  transform: translateY(-1px);
-}
-
-.mobile-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.mobile-toggle span {
-  width: 20px;
-  height: 2px;
-  background: #fff;
-}
-
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; /* Aqui você poderia adicionar lógica para um menu mobile real */
-  }
-  
-  .nav-links.is-active {
-    display: flex;
-    position: absolute;
-    top: 80px;
-    left: 20px;
-    right: 20px;
-    flex-direction: column;
-    background: rgba(10, 10, 10, 0.95);
-    padding: 20px;
-    border-radius: 20px;
-    border: 1px solid var(--glass-border);
-  }
-
-  .btn-login {
-    display: none;
-  }
-
-  .mobile-toggle {
-    display: flex;
-  }
-}
-</style>
+      <div class="flex items-center gap-4">
+        <a href="#contato" 
+        
+           class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:opacity-90 transition-all flex items-center px-5 py-2.5 rounded-full text-[0.8rem] font-bold 
+                  hover:bg-indigo-500 hover:text-white transition-all duration-300">
+          CONTATO
+        </a>
+        <div class="flex md:hidden flex-col gap-[5px] cursor-pointer" @click="toggleMenu">
+          <span :class="['w-5 h-[2px] bg-white transition-all', isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : '']"></span>
+          <span :class="['w-5 h-[2px] bg-white transition-all', isMobileMenuOpen ? 'opacity-0' : '']"></span>
+          <span :class="['w-5 h-[2px] bg-white transition-all', isMobileMenuOpen ? '-rotate-45 -translate-y-2' : '']"></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</template>
