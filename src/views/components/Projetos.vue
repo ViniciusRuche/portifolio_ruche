@@ -21,23 +21,24 @@ const projects = [
   {
     title: 'Aeroclube Web',
     shortDesc: 'Sistema de gestão para o Aeroclube de Caxias do Sul.',
-    fullDesc: 'Uma plataforma completa desenvolvida para automatizar o controle de recebimentos e fluxo de caixa do aeroclube. Inclui geração dinâmica de recibos e dashboards financeiros.',
-    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80', // Exemplo
-    tags: ['Vue 3', 'Pinia', 'Tailwind', 'Django'],
-    repo: 'https://github.com/seu-user/aeroclube',
-    live: 'https://aeroclubecaxias.com.br',
-    features: ['Gestão Financeira', 'Geração de PDF', 'Auth JWT']
+    fullDesc: 'Uma plataforma de gestão integrada desenvolvida para o Aeroclube de Caxias do Sul. O sistema automatiza o controle financeiro (fluxo de caixa e geração de recibos em PDF), a gestão acadêmica de alunos e o controle de acesso via Auth JWT, oferecendo dashboards estratégicos para a tomada de decisão.',
+    image: '/favicon/logo-aeroclube.png',
+    tags: ['Vue', 'Django', 'PostgreSQL'],
+    repo: 'https://github.com/ViniciusRuche/aeroclube',
+    live: 'https://aeroclube.wemakecode.dev/',
+    features: ['Gestão Financeira', 'Geração de PDF', 'Gestão de Usuários', 'Gestão do Acadêmico', 'Auth JWT']
   },
   {
-    title: 'Portfólio Jurídico',
-    shortDesc: 'Site profissional de alta conversão para advogados.',
-    fullDesc: 'Projeto focado em performance e SEO, utilizando Vite para carregamento instantâneo. Design minimalista com foco em acessibilidade e captura de leads.',
+    title: 'Portfólios',
+    shortDesc: 'Site profissional de alta conversão para qualquer profissional.',
+    fullDesc: 'Template de portfólio premium focado em acessibilidade e velocidade. Utiliza as tecnologias mais modernas do ecossistema frontend para entregar um site leve, com suporte a temas (Dark/Light), formulários inteligentes e excelente indexação nos motores de busca.',
     image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80',
     tags: ['Vite', 'TypeScript', 'Framer Motion'],
-    repo: 'https://github.com/seu-user/portfolio-law',
+    repo: 'https://github.com/ViniciusRuche/portfolio-web',
     live: '#',
     features: ['SEO Otimizado', 'Dark Mode', 'Formulários Validados']
-  }
+  },
+  
 ]
 
 const selectedProject = ref(null)
@@ -59,7 +60,7 @@ const selectedProject = ref(null)
             <div class="group cursor-pointer relative bg-white/[0.02] border border-white/10 rounded-3xl overflow-hidden hover:border-indigo-500/50 transition-all duration-500">
               <div class="relative h-64 overflow-hidden">
                 <div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-all duration-500 z-10"></div>
-                <img :src="p.image" :alt="p.title" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" />
+                <img :src="p.image" :alt="p.title" class="w-full h-full bg-gray-200 object-cover group-hover:scale-105 transition-all duration-700" />
                 <div class="absolute top-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
                   <div class="p-2 bg-black/60 backdrop-blur-md rounded-full border border-white/20 text-white">
                     <Maximize2 size="20" />
@@ -80,7 +81,7 @@ const selectedProject = ref(null)
           </DialogTrigger>
 
           <DialogContent class="sm:max-w-[700px] bg-[#0a0a0a] border-white/10 text-white overflow-hidden p-0">
-            <div class="h-64 w-full relative">
+            <div class="bg-gray-200 h-64 w-full relative">
               <img :src="p.image" class="w-full h-full object-cover" />
               <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent"></div>
             </div>
