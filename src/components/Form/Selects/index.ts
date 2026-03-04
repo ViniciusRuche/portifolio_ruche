@@ -1,0 +1,7 @@
+export { default as BaseSelect } from './BaseSelect.vue'
+export { default as BloodTypeSelect } from './BloodTypeSelect.vue'
+export { default as MaritalStatusSelect } from './MaritalStatusSelect.vue'
+export { default as RhFactorSelect } from './RhFactorSelect.vue'
+export { default as GenderSelect } from './GenderSelect.vue'
+export { default as UserKindSelect } from './UserKindSelect.vue'
+export { default as UserStatusSelect } from './UserStatusSelect.vue'

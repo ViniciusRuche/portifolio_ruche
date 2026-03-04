@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppLayout > matches the snapshot 1`] = `
+"<div class="antialiased bg-gray-50 dark:bg-gray-900 h-full">
+  <app-navbar-stub></app-navbar-stub>
+  <app-side-menu-stub id="side-menu"></app-side-menu-stub>
+  <main class="md:ml-64 h-fit pt-16">
+    <router-view-stub name="default"></router-view-stub>
+  </main>
+</div>"
+`;

@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppSideMenu > matches snapshot 1`] = `
+"<aside class="fixed top-0 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidenav">
+  <div class="overflow-y-auto py-5 px-3 h-full bg-white dark:bg-gray-800">
+    <ul class="space-y-2">
+      <li><a href="/" class="router-link-active router-link-exact-active flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-pie-icon w-6 h-6 text-gray-800 dark:text-white">
+            <path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"></path>
+            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+          </svg><span class="ml-3">Dashboard</span></a></li>
+      <!--v-if-->
+      <!--v-if-->
+    </ul>
+  </div>
+</aside>"
+`;

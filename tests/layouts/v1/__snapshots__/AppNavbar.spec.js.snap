@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppNavbar > matches the snapshot 1`] = `
+"<nav class="max-h-16 h-16 min-h-16 bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
+  <div class="flex flex-wrap justify-between items-center">
+    <div class="flex justify-start items-center"><button id="navbar-toggle" data-drawer-target="side-menu" data-drawer-toggle="side-menu" aria-controls="side-menu" class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        <anonymous-stub class="w-6 h-6"></anonymous-stub><span class="sr-only">Abrir Menu</span>
+      </button>
+      <router-link-stub to="[object Object]" replace="false" custom="false" ariacurrentvalue="page" class="flex items-center justify-between mr-4"></router-link-stub>
+    </div>
+    <div class="flex items-center lg:order-2">
+      <users-navbar-icon-stub></users-navbar-icon-stub>
+    </div>
+  </div>
+</nav>"
+`;
