@@ -3,8 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 export const routes = [
   {
     path: '/',
-    name: 'Dashboard',
-    component: () => import('@/layouts/v2/AppLayout.vue'),
+    name: 'Portifolio',
+    component: () => import('@/views/HomeView.vue'),
   }
 ]
 
@@ -13,7 +13,4 @@ const router = createRouter({
   routes: routes
 })
 
-router.beforeEach(authenticationGuard)
-router.beforeEach(permissionGuard)
-router.beforeEach(featureFlagGuard)
 export default router
