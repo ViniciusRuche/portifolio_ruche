@@ -32,7 +32,7 @@ const projects = [
     title: 'Portfólio Pessoal',
     shortDesc: 'Hub central da minha carreira como desenvolvedor, focado em performance e design minimalista.',
     fullDesc: 'Desenvolvido para consolidar minha presença digital, este projeto utiliza Vite para um build ultrarrápido e TypeScript para garantir a escalabilidade do código. O foco principal foi criar uma interface limpa que destaca meus projetos e habilidades técnicas, priorizando a experiência do usuário (UX) em qualquer dispositivo.',
-    image: 'https://devruche.vercel.app/assets/logo-W2uxCNhW.gif',
+    image: 'https://devruche.vercel.app/images/logo.gif',
     tags: ['Vite', 'TypeScript', 'Tailwind CSS'],
     repo: 'https://github.com/ViniciusRuche/portifolio_ruche',
     live: 'https://devruche.vercel.app/',
