@@ -20,7 +20,7 @@ const toggleMenu = () => {
                 bg-black/60 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl">
       
       <a href="#" class="flex items-center">
-        <img src="@/assets/logo.gif" alt="Logo" class="w-[110px] h-10 object-contain rounded-lg" />
+        <img src="/images/logo.gif" alt="Logo" class="w-[110px] h-10 object-contain rounded-lg" />
       </a>
 
       <ul :class="[

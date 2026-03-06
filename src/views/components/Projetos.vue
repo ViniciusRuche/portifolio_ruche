@@ -22,22 +22,32 @@ const projects = [
     title: 'Aeroclube Web',
     shortDesc: 'Sistema de gestão para o Aeroclube de Caxias do Sul.',
     fullDesc: 'Uma plataforma de gestão integrada desenvolvida para o Aeroclube de Caxias do Sul. O sistema automatiza o controle financeiro (fluxo de caixa e geração de recibos em PDF), a gestão acadêmica de alunos e o controle de acesso via Auth JWT, oferecendo dashboards estratégicos para a tomada de decisão.',
-    image: '/favicon/logo-aeroclube.png',
+    image: 'https://www.aeroclubecaxias.com.br/images/logo.png',
     tags: ['Vue', 'Django', 'PostgreSQL'],
-    repo: 'https://github.com/ViniciusRuche/aeroclube',
+    repo: 'https://github.com/ByteScratchers',
     live: 'https://aeroclube.wemakecode.dev/',
     features: ['Gestão Financeira', 'Geração de PDF', 'Gestão de Usuários', 'Gestão do Acadêmico', 'Auth JWT']
   },
   {
-    title: 'Portfólios',
-    shortDesc: 'Site profissional de alta conversão para qualquer profissional.',
-    fullDesc: 'Template de portfólio premium focado em acessibilidade e velocidade. Utiliza as tecnologias mais modernas do ecossistema frontend para entregar um site leve, com suporte a temas (Dark/Light), formulários inteligentes e excelente indexação nos motores de busca.',
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80',
-    tags: ['Vite', 'TypeScript', 'Framer Motion'],
-    repo: 'https://github.com/ViniciusRuche/portfolio-web',
-    live: '#',
+    title: 'Portfólio Pessoal',
+    shortDesc: 'Hub central da minha carreira como desenvolvedor, focado em performance e design minimalista.',
+    fullDesc: 'Desenvolvido para consolidar minha presença digital, este projeto utiliza Vite para um build ultrarrápido e TypeScript para garantir a escalabilidade do código. O foco principal foi criar uma interface limpa que destaca meus projetos e habilidades técnicas, priorizando a experiência do usuário (UX) em qualquer dispositivo.',
+    image: 'https://devruche.vercel.app/assets/logo-W2uxCNhW.gif',
+    tags: ['Vite', 'TypeScript', 'Tailwind CSS'],
+    repo: 'https://github.com/ViniciusRuche/portifolio_ruche',
+    live: 'https://devruche.vercel.app/',
     features: ['SEO Otimizado', 'Dark Mode', 'Formulários Validados']
   },
+  {
+    title: 'Portfólio Sandra Oliveira Auriculoterapeuta',
+    shortDesc: 'Landing page profissional focada em conversão e autoridade para atendimentos de auriculoterapia.',
+    fullDesc: 'Um projeto desenvolvido para converter visitantes em pacientes. A interface foi pensada para transmitir calma e confiança, utilizando as cores da identidade visual da profissional. Implementei um fluxo de contato otimizado e estratégias de SEO local para garantir que a Sandra seja encontrada facilmente por quem busca seus serviços.',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80',
+    tags: ['Vite', 'TypeScript', 'Tailwind CSS'],
+    repo: 'https://github.com/SandraOliveiraAuri/portifolio',
+    live: 'https://sandraoliveira.vercel.app/',
+    features: ['SEO Otimizado', 'Call-to-Action estratégico para WhatsApp.', 'Layout Responsivo.']
+  }
   
 ]
 

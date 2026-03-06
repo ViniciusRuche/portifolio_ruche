@@ -11,7 +11,7 @@ import { GraduationCap, MapPin, Code2, Rocket } from 'lucide-vue-next'
           <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
           <div class="relative bg-black rounded-2xl overflow-hidden border border-white/10">
             <img 
-              src="@/assets/perfil.jpeg" 
+              src="/images/perfil.jpeg" 
               alt="Sua Foto" 
               class="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
