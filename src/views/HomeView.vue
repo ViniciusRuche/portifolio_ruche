@@ -23,7 +23,7 @@ import Separator from '@/components/ui/separator/Separator.vue'
     <Separator class="bg-border dark:bg-indigo-500/30 w-[80%] mx-auto shadow-sm"/>
     <footer class="bg-background py-10 text-center text-sm transition-colors duration-500">
       <p class="text-muted-foreground italic font-medium">
-        © 2026 - <span class="text-foreground font-bold">Vinícius RucheXX</span>. 
+        © 2026 - <span class="text-foreground font-bold">Vinícius Ruche</span>. 
         Todos os direitos reservados. 
         <br class="md:hidden" /> Desenvolvido com <span class="text-indigo-600 dark:text-indigo-400">Vue.js</span> e <span class="text-indigo-600 dark:text-indigo-400">Tailwind CSS</span>.
       </p>
