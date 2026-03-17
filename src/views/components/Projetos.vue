@@ -76,8 +76,8 @@ const projects = [
             </div>
           </DialogTrigger>
 
-          <DialogContent class="sm:max-w-[700px] bg-background border-border text-foreground overflow-hidden p-0 shadow-2xl transition-colors duration-500">
-            <div class="bg-muted h-64 w-full relative">
+          <DialogContent class="w-[95%] sm:w-full sm:max-w-[700px] max-h-[80vh] sm:max-h-none overflow-y-auto sm:overflow-visible bg-background border-border text-foreground p-0 shadow-2xl transition-colors duration-500">
+            <div class="bg-muted h-48 sm:h-64 w-full relative">
               <img :src="p.image" class="w-full h-full object-cover" />
               <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
             </div>
