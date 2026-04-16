@@ -4,16 +4,16 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Badge } from '@/components/ui/badge'
 
 const projects = [
-  {
-    title: 'Aeroclube Web',
-    shortDesc: 'Sistema de gestão para o Aeroclube de Caxias do Sul.',
-    fullDesc: 'Uma plataforma de gestão integrada desenvolvida para o Aeroclube de Caxias do Sul. O sistema automatiza o controle financeiro (fluxo de caixa e geração de recibos em PDF), a gestão acadêmica de alunos e o controle de acesso via Auth JWT, oferecendo dashboards estratégicos para a tomada de decisão.',
-    image: 'https://www.aeroclubecaxias.com.br/images/logo.png',
-    tags: ['Vue', 'Django', 'PostgreSQL'],
-    repo: 'https://github.com/ByteScratchers',
-    live: 'https://aeroclube.wemakecode.dev/',
-    features: ['Gestão Financeira', 'Geração de PDF', 'Gestão de Usuários', 'Gestão do Acadêmico', 'Auth JWT']
-  },
+//  {
+//    title: 'Aeroclube Web',
+//    shortDesc: 'Sistema de gestão para o Aeroclube de Caxias do Sul.',
+//    fullDesc: 'Uma plataforma de gestão integrada desenvolvida para o Aeroclube de Caxias do Sul. O sistema automatiza o controle financeiro (fluxo de caixa e geração de recibos em PDF), a gestão acadêmica de alunos e o controle de acesso via Auth JWT, oferecendo dashboards estratégicos para a tomada de decisão.',
+//    image: 'https://www.aeroclubecaxias.com.br/images/logo.png',
+//    tags: ['Vue', 'Django', 'PostgreSQL'],
+//    repo: 'https://github.com/ByteScratchers',
+//    live: 'https://aeroclube.wemakecode.dev/',
+//    features: ['Gestão Financeira', 'Geração de PDF', 'Gestão de Usuários', 'Gestão do Acadêmico', 'Auth JWT']
+//  },
   {
     title: 'Portfólio Pessoal',
     shortDesc: 'Hub central da minha carreira como desenvolvedor, focado em performance e design minimalista.',
